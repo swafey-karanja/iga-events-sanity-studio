@@ -54,7 +54,7 @@ export const eventType = defineType({
       name: "imageAlt",
       title: "Image Alt Text",
       type: "string",
-      validation: (Rule) => Rule.required(),
+      // validation: (Rule) => Rule.required(),
     }),
 
     // Event dates
@@ -120,18 +120,18 @@ export const eventType = defineType({
     }),
 
     // Additional information
-    defineField({
-      name: "category",
-      title: "Event Category",
-      type: "string",
-    }),
+    // defineField({
+    //   name: "category",
+    //   title: "Event Category",
+    //   type: "string",
+    // }),
 
-    defineField({
-      name: "guests",
-      title: "Number of Guests",
-      type: "number",
-      validation: (Rule) => Rule.integer().min(0),
-    }),
+    // defineField({
+    //   name: "guests",
+    //   title: "Number of Guests",
+    //   type: "number",
+    //   validation: (Rule) => Rule.integer().min(0),
+    // }),
 
     defineField({
       name: "featured",
