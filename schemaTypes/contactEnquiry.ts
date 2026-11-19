@@ -38,6 +38,7 @@ export const contactEnquiryType = defineType({
     info('budget', 'Budget'),
     info('message', 'Message', 'text'),
     defineField({name: 'consent', type: 'boolean', readOnly: true}),
+    defineField({name: 'ipHash', type: 'string', readOnly: true, hidden: true}),
   ],
   orderings: [
     {title: 'Newest first', name: 'newest', by: [{field: 'receivedAt', direction: 'desc'}]},
